@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumbres Cotidianas | Tu Pasión por la Montaña</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Inter:wght@300;400;600&family=Mochiy+Pop+P+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Cumbres<span>Cotidianas</span></div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 1) Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-image">
+            <img src="assets/pareja_001.jpg" alt="Pareja en la montaña">
+        </div>
+        <div class="hero-content">
+            <h2 class="fade-in">"Eleva tu horizonte, paso a paso"</h2>
+            <h1 class="hero-title">La Montaña como <span class="highlight">Estilo de Vida</span></h1>
+            <p class="fade-in">Equipamiento premium para exploradores que ven en cada sendero una nueva historia.</p>
+            <a href="#productos" class="btn btn-primary fade-in">Explorar Colección</a>
+        </div>
+    </section>
+
+    <!-- 2) Main Products -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title">Esenciales de Aventura</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/climbing_glasses.png" alt="Gafas Peak-Vision">
+                    </div>
+                    <h3>Peak-Vision Glasses</h3>
+                    <p>Protección UV400 con estilo aerodinámico.</p>
+                    <span class="price">$120.00</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/hiking_jacket.png" alt="Chamarra Trekking Pro">
+                    </div>
+                    <h3>Trekking Jacket Pro</h3>
+                    <p>Impermeable y transpirable para cualquier clima.</p>
+                    <span class="price">$245.00</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/hiking_backpack.png" alt="Mochila Alpine">
+                    </div>
+                    <h3>Alpine Backpack</h3>
+                    <p>Ergonomía superior para recorridos largos.</p>
+                    <span class="price">$185.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3) Discounted Products + Filter -->
+    <section id="ofertas" class="discounts">
+        <div class="container">
+            <div class="discount-header">
+                <h2 class="section-title">Ofertas de Altura</h2>
+                <div class="product-filter">
+                    <button id="filter-btn" class="filter-trigger">
+                        Filtrar por Categoría <span>▼</span>
+                    </button>
+                    <ul id="filter-menu" class="filter-dropdown">
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Vestimenta</a></li>
+                        <li><a href="#">Equipamiento</a></li>
+                        <li><a href="#">Calzado</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="discount-grid">
+                <div class="discount-card">
+                    <div class="badge">20% OFF</div>
+                    <img src="assets/climbing_glasses.png" alt="Gafas en oferta">
+                    <h3>Gafas Summit Lite</h3>
+                    <div class="prices">
+                        <span class="old-price">$90.00</span>
+                        <span class="new-price">$72.00</span>
+                    </div>
+                </div>
+                <!-- More items can go here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 4) Technical Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3 4 7l4 4" />
+                            <path d="M4 7h16" />
+                            <path d="m16 21 4-4-4-4" />
+                            <path d="M20 17H4" />
+                        </svg>
+                    </div>
+                    <h3>Durabilidad Extrema</h3>
+                    <p>Materiales probados en las condiciones más exigentes del mundo.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2z" />
+                            <path d="M7 12a5 5 0 0 1 5-5" />
+                            <path d="M12 17a5 5 0 0 0 5-5" />
+                        </svg>
+                    </div>
+                    <h3>Diseño Sostenible</h3>
+                    <p>Comprometidos con el medio ambiente utilizando fibras recicladas.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20.42 4.58a5 5 0 0 0-7.07 0l-1.35 1.35-1.35-1.35a5 5 0 0 0-7.07 7.07l1.35 1.35 7.07 7.07 7.07-7.07 1.35-1.35a5 5 0 0 0 0-7.07z" />
+                        </svg>
+                    </div>
+                    <h3>Confort Anatómico</h3>
+                    <p>Ajuste perfecto diseñado para el movimiento natural del cuerpo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5) Guarantees & Testimonials -->
+    <section id="testimonios" class="testimonials">
+        <div class="testimonials-bg">
+            <img src="assets/hero_mountains.png" alt="Fondo montañas">
+        </div>
+        <div class="container relative-content">
+            <h2 class="section-title">Voces de la Cumbre</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <p>"La mochila Alpine cambió mis caminatas de fin de semana. No pesa nada y el diseño es simplemente
+                        hermoso."</p>
+                    <h4>- Mariana R., Entusiasta del senderismo</h4>
+                </div>
+            </div>
+            <div class="guarantees">
+                <div class="guarantee-item">
+                    <span>🛡️</span>
+                    <p>Garantía de 2 años</p>
+                </div>
+                <div class="guarantee-item">
+                    <span>🔄</span>
+                    <p>Devolución gratuita</p>
+                </div>
+                <div class="guarantee-item">
+                    <span>✈️</span>
+                    <p>Envío Express</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Cumbres Cotidianas. Caminando hacia lo alto.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
